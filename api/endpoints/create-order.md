@@ -26,6 +26,7 @@ POST /api/orders
   ],
   "total_price": 49.99
 }
+```
 
 ## Response
 
@@ -36,6 +37,7 @@ POST /api/orders
   "order_id": "ORD-001",
   "status": "created"
 }
+```
 
 ### Error (400)
 
@@ -43,6 +45,7 @@ POST /api/orders
 {
   "error": "Invalid request parameters"
 }
+```
 
 ## Notes
 
