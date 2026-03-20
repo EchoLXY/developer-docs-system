@@ -26,3 +26,35 @@ POST /api/orders
   ],
   "total_price": 49.99
 }
+
+## Response
+
+### Success (200)
+
+```json
+{
+  "order_id": "ORD-001",
+  "status": "created"
+}
+
+### Error (400)
+
+```json
+{
+  "error": "Invalid request parameters"
+}
+
+## Notes
+
+- Ensure the user is authenticated before making this request  
+- Validate item availability before submission
+
+---
+
+## Example Request
+
+```bash
+curl -X POST https://api.example.com/orders \
+  -H "Authorization: Bearer YOUR_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{ ... }'
