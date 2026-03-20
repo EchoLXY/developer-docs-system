@@ -1,0 +1,14 @@
+{
+  "name": "Create Order",
+  "method": "POST",
+  "path": "/api/orders",
+  "description": "Creates a new order",
+  "request": {
+    "user_id": "12345",
+    "items": [{"product_id": "A001", "quantity": 2}]
+  },
+  "response": {
+    "order_id": "ORD-001",
+    "status": "created"
+  }
+}
