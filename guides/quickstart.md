@@ -11,3 +11,7 @@ curl -X POST https://api.example.com/orders \
   -H "Authorization: Bearer YOUR_TOKEN" \
   -H "Content-Type: application/json" \
   -d '{ ... }'
+```
+
+## Step 3: Handle Response
+Check for success or error codes and handle accordingly.
